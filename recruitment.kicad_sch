@@ -1770,6 +1770,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 116.84) (xy 95.25 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8047c802-c7a8-4444-82e7-700fa1fcf54b")
+	)
+	(wire
+		(pts
 			(xy 111.76 63.5) (xy 111.76 43.18)
 		)
 		(stroke
@@ -1777,6 +1787,16 @@
 			(type default)
 		)
 		(uuid "81ae0483-7c55-4b4b-84a0-5a68bd1c172c")
+	)
+	(wire
+		(pts
+			(xy 90.17 111.76) (xy 95.25 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89f9b55e-0d6f-477c-9f5a-4005179b0e15")
 	)
 	(wire
 		(pts
@@ -1890,6 +1910,28 @@
 			)
 		)
 	)
+	(global_label "5V"
+		(shape input)
+		(at 92.71 92.71 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0509935f-bfea-4697-88d3-6abda91df27c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 97.3391 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape input)
 		(at 138.43 109.22 270)
@@ -1912,9 +1954,9 @@
 			)
 		)
 	)
-	(global_label "3,3V"
+	(global_label "GND"
 		(shape input)
-		(at 27.94 139.7 90)
+		(at 115.57 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1922,9 +1964,31 @@
 			)
 			(justify left)
 		)
-		(uuid "124da280-2b2c-4ffe-9c15-f2f603e58848")
+		(uuid "06eea123-66ca-41c9-baec-51d24fe1bbc2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 27.94 133.2566 90)
+			(at 121.7715 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V"
+		(shape input)
+		(at 92.71 111.76 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "11b09695-7d5e-40fc-b3b2-0a22434cb38f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 107.1309 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1958,7 +2022,7 @@
 	)
 	(global_label "MONITOR SUPPLY"
 		(shape input)
-		(at 53.34 114.3 180)
+		(at 64.77 111.76 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1968,7 +2032,7 @@
 		)
 		(uuid "2d57ceb6-a4ae-4b33-8dd5-87f72c1a829c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.5594 114.3 0)
+			(at 45.9894 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2044,6 +2108,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 64.77 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6400f366-12dc-4358-be9a-a9fec359f742")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 58.5685 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "3,3V"
 		(shape input)
 		(at 130.81 101.6 270)
@@ -2062,6 +2148,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "3,3V"
+		(shape input)
+		(at 115.57 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "797cbd2e-bafb-4a1c-a437-f2bf4d266310")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.0134 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2106,28 +2214,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "5V"
-		(shape input)
-		(at 35.56 139.7 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f246fb83-b692-4315-9e73-dd4cf9a6b432")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.56 135.0709 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -2427,7 +2513,7 @@
 	)
 	(symbol
 		(lib_id "Converter_DCDC:IH0503SH")
-		(at 106.68 113.03 0)
+		(at 105.41 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2436,7 +2522,7 @@
 		(fields_autoplaced yes)
 		(uuid "b1c6d1db-f175-4614-b239-4292e369af99")
 		(property "Reference" "PS1"
-			(at 106.68 102.87 0)
+			(at 105.41 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2444,7 +2530,7 @@
 			)
 		)
 		(property "Value" "IH0503SH"
-			(at 106.68 105.41 0)
+			(at 105.41 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2452,7 +2538,7 @@
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_XP_POWER-IHxxxxSH_THT"
-			(at 80.01 119.38 0)
+			(at 78.74 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2462,7 +2548,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.xppower.com/pdfs/SF_IH.pdf"
-			(at 133.35 120.65 0)
+			(at 132.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2472,7 +2558,7 @@
 			)
 		)
 		(property "Description" "XP Power 2W, 3000-6000 VDC Isolated DC/DC Converter Module, Dual Output Voltage ±3.3V, ±200mA, 5V Input Voltage, SIP"
-			(at 106.68 113.03 0)
+			(at 105.41 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2789,6 +2875,16 @@
 				(justify right)
 			)
 			(uuid "284bb838-c661-4308-8dce-7da3987930f6")
+		)
+		(pin "5v" input
+			(at 92.71 92.71 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "64cc118b-d63f-40f1-8ed6-b342c5a2fd66")
 		)
 		(instances
 			(project "recruitment"

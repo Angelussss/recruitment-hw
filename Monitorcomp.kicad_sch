@@ -640,28 +640,6 @@
 		)
 		(uuid "dbd6c8ad-53f4-442b-9643-3cc355f8abf7")
 	)
-	(global_label "5V"
-		(shape input)
-		(at 151.13 97.79 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "029011ac-12f1-44ac-a254-dc3417928573")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.13 102.4191 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape input)
 		(at 160.02 72.39 0)
@@ -719,6 +697,18 @@
 			(justify left)
 		)
 		(uuid "a361254d-cd8b-4b0b-9ab9-8432eb7c77ea")
+	)
+	(hierarchical_label "5v"
+		(shape input)
+		(at 151.13 97.79 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a5645242-bbc6-4bee-ad8e-102576480b7d")
 	)
 	(symbol
 		(lib_id "Device:R")
