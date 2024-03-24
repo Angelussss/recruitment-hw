@@ -646,7 +646,8 @@
 		)
 		(symbol "TCR5AM055:TCR5AM055"
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -830,8 +831,10 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "TCR5AM055_1_1"
 				(pin output line
-					(at 15.2654 -2.54 180)
+					(at 15.24 -2.54 180)
 					(length 0.0254)
 					(name "1"
 						(effects
@@ -848,10 +851,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at -2.5146 -7.62 180)
+				(pin output line
+					(at -2.54 -7.62 0)
 					(length 0.0254)
-					(name "2"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -866,10 +869,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at -2.5146 -12.7 180)
+				(pin output line
+					(at -2.54 -12.7 0)
 					(length 0.0254)
-					(name "3"
+					(name "0.55V_out"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -885,7 +888,7 @@
 					)
 				)
 				(pin input line
-					(at -2.5146 -2.54 180)
+					(at -2.54 -2.54 0)
 					(length 0.0254)
 					(name "4"
 						(effects
@@ -902,10 +905,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 15.2654 -12.7 180)
+				(pin input line
+					(at 15.24 -12.7 180)
 					(length 0.0254)
-					(name "5"
+					(name "pow_in"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -936,12 +939,6 @@
 		(uuid "6dbd051c-ccad-4f69-aa62-54eb1e04dd02")
 	)
 	(junction
-		(at 176.5046 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b0307dc6-3d85-4f83-8785-73791c467d31")
-	)
-	(junction
 		(at 203.2 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -955,7 +952,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 80.01) (xy 176.5046 80.01)
+			(xy 170.18 80.01) (xy 176.53 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1005,16 +1002,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.5046 80.01) (xy 176.53 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "307539c4-b879-46f9-a0fc-1cbb23ba23f9")
-	)
-	(wire
-		(pts
 			(xy 130.81 68.58) (xy 130.81 80.01)
 		)
 		(stroke
@@ -1032,6 +1019,16 @@
 			(type default)
 		)
 		(uuid "4c27887d-fc35-4386-8646-c74a9fa9b43e")
+	)
+	(wire
+		(pts
+			(xy 194.31 74.93) (xy 196.85 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2626f98-b910-4df8-b786-c605b85efc26")
 	)
 	(wire
 		(pts
@@ -1075,7 +1072,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 194.31 74.93 0)
+		(at 196.85 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1085,7 +1082,7 @@
 		)
 		(uuid "0d072298-806c-4e41-9c95-b9195bbbded5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.5115 74.93 0)
+			(at 203.0515 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1266,86 +1263,6 @@
 		(uuid "857d575e-9bce-42a8-a3e5-0f2f9ce5191b")
 	)
 	(symbol
-		(lib_id "TCR5AM055:TCR5AM055")
-		(at 191.77 67.31 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0204e72c-c02a-47ea-b10d-8cbddb75086e")
-		(property "Reference" "U4"
-			(at 185.42 62.23 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "TCR5AM055"
-			(at 185.42 64.77 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "DFN5B_TOS"
-			(at 191.77 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "TCR5AM055"
-			(at 191.77 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 191.77 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e17650d5-1a63-4e1a-aa32-5e7e57c0752b")
-		)
-		(pin "4"
-			(uuid "6a8124e4-d9ca-4e31-a36b-464842ddeb44")
-		)
-		(pin "5"
-			(uuid "e12f5664-a6b0-4d18-bbed-4e5fbc2aa515")
-		)
-		(pin "3"
-			(uuid "385e6811-da48-4da7-b285-dbd7b97b9055")
-		)
-		(pin "2"
-			(uuid "9b929692-08d7-4af5-a989-233c95d88332")
-		)
-		(instances
-			(project "recruitment"
-				(path "/bdc7face-9f7c-4701-80bb-4cc144448db1/209c530a-7e9c-4ebf-a627-f537295344ec"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 203.2 83.82 0)
 		(unit 1)
@@ -1489,6 +1406,86 @@
 			(project "recruitment"
 				(path "/bdc7face-9f7c-4701-80bb-4cc144448db1/209c530a-7e9c-4ebf-a627-f537295344ec"
 					(reference "PS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TCR5AM055:TCR5AM055")
+		(at 191.77 67.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab3d95b1-c914-4dbc-a817-64a72de1b907")
+		(property "Reference" "U4"
+			(at 185.42 62.23 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TCR5AM055"
+			(at 185.42 64.77 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "DFN5B_TOS"
+			(at 191.77 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "TCR5AM055"
+			(at 191.77 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d72b799e-7279-42ef-a21e-1fbae2cffa5c")
+		)
+		(pin "1"
+			(uuid "d6016e8d-ea96-4f48-a2e0-5f11488eda65")
+		)
+		(pin "4"
+			(uuid "63a11708-b9d7-4e01-8f44-9a9bc28e784e")
+		)
+		(pin "2"
+			(uuid "2aa49ba6-8696-49cd-a0ab-6a9121c8c501")
+		)
+		(pin "5"
+			(uuid "08c063c1-0782-4c92-abcd-d600e04872a8")
+		)
+		(instances
+			(project "recruitment"
+				(path "/bdc7face-9f7c-4701-80bb-4cc144448db1/209c530a-7e9c-4ebf-a627-f537295344ec"
+					(reference "U4")
 					(unit 1)
 				)
 			)
