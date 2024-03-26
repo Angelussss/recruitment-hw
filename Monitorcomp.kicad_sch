@@ -403,6 +403,189 @@
 				)
 			)
 		)
+		(symbol "POR:STM1001SWX6F"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 20.32 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "STM1001SWX6F"
+				(at 20.32 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "SOT-23_STM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "STM1001SWX6F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "STM1001SWX6F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT-23_STM SOT-23_STM-M SOT-23_STM-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "STM1001SWX6F_0_1"
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 33.02 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 -7.62) (xy 33.02 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 7.62)
+					(name "*RST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 40.64 -2.54 180)
+					(length 7.62)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Transistor_BJT:2N2219"
 			(pin_names
 				(offset 0) hide)
@@ -594,12 +777,6 @@
 			)
 		)
 	)
-	(junction
-		(at 151.13 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "444fff82-591f-412f-83c6-e31936a13b03")
-	)
 	(wire
 		(pts
 			(xy 160.02 72.39) (xy 156.21 72.39)
@@ -612,7 +789,17 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 87.63) (xy 151.13 88.9)
+			(xy 36.83 55.88) (xy 40.64 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31b97d56-ae06-42c0-9411-b0717720c627")
+	)
+	(wire
+		(pts
+			(xy 151.13 87.63) (xy 151.13 90.17)
 		)
 		(stroke
 			(width 0)
@@ -622,27 +809,37 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 88.9) (xy 151.13 90.17)
+			(xy 29.21 48.26) (xy 35.56 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7f71a24e-a1f4-4715-9ab8-9557a7cf16a5")
+		(uuid "70e61408-f6ac-455a-b9d7-175e03cf91c6")
 	)
 	(wire
 		(pts
-			(xy 151.13 88.9) (xy 166.37 88.9)
+			(xy 36.83 90.17) (xy 36.83 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dbd6c8ad-53f4-442b-9643-3cc355f8abf7")
+		(uuid "ad6df35e-6d90-40a3-bfe6-565de14af11b")
+	)
+	(wire
+		(pts
+			(xy 50.8 48.26) (xy 45.72 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b83e3d1d-9744-43e6-b58f-57b43850fbdd")
 	)
 	(global_label "GND"
 		(shape input)
-		(at 160.02 72.39 0)
+		(at 77.47 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -650,9 +847,9 @@
 			)
 			(justify left)
 		)
-		(uuid "82127050-5ae0-402d-8861-52a76d0b2215")
+		(uuid "ee147044-1f2e-4ff0-b013-11b38abb6b56")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.2215 72.39 0)
+			(at 83.6715 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -662,9 +859,33 @@
 			)
 		)
 	)
-	(hierarchical_label "+"
+	(hierarchical_label "5v"
 		(shape input)
-		(at 181.61 91.44 0)
+		(at 21.59 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4b2e002d-25e3-4215-b7ad-bccefed2f1d1")
+	)
+	(hierarchical_label "-"
+		(shape input)
+		(at 153.67 105.41 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7683a5c8-0e90-44bc-8ac0-83f0c6edda21")
+	)
+	(hierarchical_label "POR"
+		(shape input)
+		(at 50.8 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -672,9 +893,21 @@
 			)
 			(justify left)
 		)
-		(uuid "14576452-f206-4e4d-ba71-fefea56d7298")
+		(uuid "b476117b-a8ae-450c-b325-5355eebcaf9f")
 	)
-	(hierarchical_label "Vcc"
+	(hierarchical_label "+"
+		(shape input)
+		(at 148.59 105.41 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bd23bbb7-c77c-4775-a2db-0c28484e6af9")
+	)
+	(hierarchical_label "5v"
 		(shape input)
 		(at 138.43 72.39 180)
 		(fields_autoplaced yes)
@@ -684,11 +917,11 @@
 			)
 			(justify right)
 		)
-		(uuid "21071071-bb76-41ed-880d-3c66a58df3f6")
+		(uuid "c89360fb-f5ea-4c03-a10e-8f90fb8e52b4")
 	)
-	(hierarchical_label "-"
+	(hierarchical_label "Vcc"
 		(shape input)
-		(at 181.61 86.36 0)
+		(at 160.02 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -696,11 +929,11 @@
 			)
 			(justify left)
 		)
-		(uuid "a361254d-cd8b-4b0b-9ab9-8432eb7c77ea")
+		(uuid "c951a0ca-0e69-40c0-8b29-2ab5d63d68e0")
 	)
 	(hierarchical_label "5v"
 		(shape input)
-		(at 151.13 97.79 270)
+		(at 36.83 92.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -708,7 +941,7 @@
 			)
 			(justify right)
 		)
-		(uuid "a5645242-bbc6-4bee-ad8e-102576480b7d")
+		(uuid "ddfc87eb-6f5f-4446-b297-a9c9e0c06a50")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -855,6 +1088,234 @@
 		)
 	)
 	(symbol
+		(lib_id "Comparator:LM393")
+		(at 151.13 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "593d2ed0-923b-47d4-8f69-e754ed611a32")
+		(property "Reference" "U2"
+			(at 161.29 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM393"
+			(at 158.75 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf"
+			(at 151.13 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
+			(at 151.13 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "c479184f-1c2a-4c05-b5db-97d0c3d38b67")
+		)
+		(pin "4"
+			(uuid "bc80a17f-d89f-41f7-9800-782686fa89b7")
+		)
+		(pin "2"
+			(uuid "7facbb0f-70d9-4c9c-aa0c-871a113e2fb5")
+		)
+		(pin "3"
+			(uuid "2a2d15a5-0420-4d6e-8ee3-6494110061cc")
+		)
+		(pin "1"
+			(uuid "b98c4fe9-a16e-47db-82a1-cb7cba7a109a")
+		)
+		(pin "7"
+			(uuid "18d7138e-f1f5-4e97-9c90-59182a7abd1d")
+		)
+		(pin "6"
+			(uuid "34b2cacf-dbf7-43f0-a771-6158bf05a57c")
+		)
+		(pin "5"
+			(uuid "1c6e4885-02a9-4044-91de-2721eb695c45")
+		)
+		(instances
+			(project "recruitment"
+				(path "/bdc7face-9f7c-4701-80bb-4cc144448db1/57aae576-8fd3-4844-9862-721907d17f64"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 25.4 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "892445ba-1940-4e33-b216-06f539be3944")
+		(property "Reference" "R5"
+			(at 25.4 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 25.4 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 25.4 50.038 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 25.4 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a62cfc2-3a65-4ae1-9398-d953ed61ba73")
+		)
+		(pin "2"
+			(uuid "8aaeb1b0-ef79-4aa1-bce5-5ef1914e87bf")
+		)
+		(instances
+			(project "recruitment"
+				(path "/bdc7face-9f7c-4701-80bb-4cc144448db1/57aae576-8fd3-4844-9862-721907d17f64"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:2N2219")
+		(at 40.64 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1b662c9-47ab-4826-a62d-f5973f4424a1")
+		(property "Reference" "Q2"
+			(at 40.64 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2N2219"
+			(at 40.64 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-39-3"
+			(at 42.545 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF"
+			(at 40.64 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "800mA Ic, 50V Vce, NPN Transistor, TO-39"
+			(at 40.64 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d1848f08-2c8f-4506-abc1-3228eb95172a")
+		)
+		(pin "1"
+			(uuid "f6c717f3-a00a-4e9f-b42b-b21a38995640")
+		)
+		(pin "3"
+			(uuid "57b64030-86cb-4aff-a05f-b3d5ea8f6632")
+		)
+		(instances
+			(project "recruitment"
+				(path "/bdc7face-9f7c-4701-80bb-4cc144448db1/57aae576-8fd3-4844-9862-721907d17f64"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 142.24 72.39 90)
 		(unit 1)
@@ -863,8 +1324,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a53e4405-29a6-4a90-a5a4-f996bef07309")
-		(property "Reference" "R3"
+		(uuid "a575e0f3-9411-4b9f-b676-c1d12c152ff6")
+		(property "Reference" "R1"
 			(at 142.24 66.04 90)
 			(effects
 				(font
@@ -908,80 +1369,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7b28e94e-e785-4de7-abe9-b737731ece44")
+			(uuid "b6ef4972-f1e7-4d28-8fa2-849ff69e44ae")
 		)
 		(pin "2"
-			(uuid "1d19d788-0bd2-479d-bd8f-0c5ba2b533be")
-		)
-		(instances
-			(project "recruitment"
-				(path "/bdc7face-9f7c-4701-80bb-4cc144448db1/57aae576-8fd3-4844-9862-721907d17f64"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 151.13 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c55dfaa4-b04d-489b-b0d3-0e34ffca75c1")
-		(property "Reference" "R1"
-			(at 153.67 92.7099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10kΩ"
-			(at 153.67 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 149.352 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 151.13 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d59a614b-d6a9-425b-bced-40a882b7e7a7")
-		)
-		(pin "2"
-			(uuid "b697b728-42ef-45d5-a485-5e037247841f")
+			(uuid "334e327c-d834-4648-b83c-51e1d8da5d5c")
 		)
 		(instances
 			(project "recruitment"
@@ -993,86 +1384,73 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM393")
-		(at 173.99 88.9 180)
+		(lib_id "POR:STM1001SWX6F")
+		(at 36.83 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ed83f295-091c-4ebf-aa54-db1c6863b7cb")
-		(property "Reference" "U2"
-			(at 173.99 78.74 0)
+		(uuid "be16d3c8-6457-404a-9b9d-dbf28d4b1020")
+		(property "Reference" "U5"
+			(at 57.15 80.01 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "LM393"
-			(at 173.99 81.28 0)
+		(property "Value" "STM1001SWX6F"
+			(at 57.15 82.55 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 173.99 88.9 0)
+		(property "Footprint" "SOT-23_STM"
+			(at 36.83 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "STM1001SWX6F"
+			(at 36.83 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf"
-			(at 173.99 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
-			(at 173.99 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "c479184f-1c2a-4c05-b5db-97d0c3d38b67")
-		)
-		(pin "4"
-			(uuid "bc80a17f-d89f-41f7-9800-782686fa89b7")
 		)
 		(pin "2"
-			(uuid "a7ef9ea2-132c-4d6e-a6ee-9ad3d2c30184")
-		)
-		(pin "3"
-			(uuid "01e43f7d-14b3-4e2c-9963-142675a1e56b")
+			(uuid "43ed1bbc-fc8f-4de4-aa61-d3f355ea8aa4")
 		)
 		(pin "1"
-			(uuid "5bbb60be-2157-4959-9347-ed36d0dace60")
+			(uuid "6434fc4c-6d26-4dff-9009-c192f362c8ff")
 		)
-		(pin "7"
-			(uuid "18d7138e-f1f5-4e97-9c90-59182a7abd1d")
-		)
-		(pin "6"
-			(uuid "34b2cacf-dbf7-43f0-a771-6158bf05a57c")
-		)
-		(pin "5"
-			(uuid "1c6e4885-02a9-4044-91de-2721eb695c45")
+		(pin "3"
+			(uuid "35a35e8b-ef7b-428b-88e7-2bb4dbbceff0")
 		)
 		(instances
 			(project "recruitment"
 				(path "/bdc7face-9f7c-4701-80bb-4cc144448db1/57aae576-8fd3-4844-9862-721907d17f64"
-					(reference "U2")
+					(reference "U5")
 					(unit 1)
 				)
 			)

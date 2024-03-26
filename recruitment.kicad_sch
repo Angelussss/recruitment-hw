@@ -682,6 +682,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 107.95) (xy 107.95 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "059d5dc7-b7e2-4c08-ac9b-21b11ccfc556")
+	)
+	(wire
+		(pts
 			(xy 173.99 125.73) (xy 168.91 125.73)
 		)
 		(stroke
@@ -779,6 +789,16 @@
 			(type default)
 		)
 		(uuid "5f6f6038-6dbe-46a6-9504-c8183dd0e42f")
+	)
+	(wire
+		(pts
+			(xy 111.76 107.95) (xy 107.95 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e26f821-f758-455e-a0b5-820e41a4c9ac")
 	)
 	(wire
 		(pts
@@ -1716,6 +1736,16 @@
 				(justify left)
 			)
 			(uuid "64cc118b-d63f-40f1-8ed6-b342c5a2fd66")
+		)
+		(pin "POR" input
+			(at 111.76 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "77a61bef-84c8-40cf-8575-87a2a9793712")
 		)
 		(instances
 			(project "recruitment"
